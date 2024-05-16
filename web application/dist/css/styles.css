@@ -1,0 +1,162 @@
+/* Navigation Styling */
+
+.navBar {
+  font-family: consolas;
+}
+
+.navbarMenuItem {
+  background-color: #0e8ea8;
+  color: #fff;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.navbarMenuItem:hover {
+  font-weight: bolder;
+}
+
+.navbarSubMenuItem {
+  background-color: #83d1e1;
+  gap: 1;
+  color: #212529;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.navbarSubMenuItem:hover {
+  background-color: #6cb8ca;
+  color: white;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbarSubMenu {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+  transform: translateY(-10px);
+}
+
+.navbarMenuItemWrapper:hover .navbarSubMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
+.active {
+  font-weight: bolder;
+}
+
+/* Table */
+
+.table-custom {
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  border: thin solid #212529;
+  border-radius: 5px;
+}
+
+.table-head {
+  font-family: consolas;
+  border: thin solid #212529;
+  background-color: #0e8ea8 !important;
+  color: #fff !important;
+}
+
+.table-cell {
+  font-family: calibri;
+  border: thin solid #212529;
+  background-color: #83d1e1 !important;
+  color: #212529;
+}
+
+.row-active:hover {
+  background-color: green !important;
+}
+
+/* Buttons */
+
+.in-button {
+  background-color: #198754;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-family: consolas;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+}
+
+.in-button:hover {
+  background-color: #147d44;
+  transform: scale(1.05); /* Scale up slightly on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.refresh-button {
+  background-color: #0e8ea8;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-family: consolas;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+}
+
+.out-button {
+  font-family: consolas;
+  background-color: #dc3545;
+  color: #fff;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  border: none;
+  border-radius: 3px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+}
+
+.out-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #c82333;
+}
+
+.refresh-button:hover {
+  background-color: #6cb8ca;
+  color: white;
+}
+
+/* Images */
+
+.custom-img {
+  max-width: 50px;
+  border-radius: 11px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+}
+
+/* Icons */
+
+.bi-check2-circle {
+  font-size: 5rem;
+  color: green;
+}
+
+.bi-x-circle {
+  font-size: 3rem;
+  color: red;
+}
+/* Error containers & messages */
+
+.error-container {
+  display: none;
+  color: red;
+}
+
+#phone-error {
+  color: red;
+}
